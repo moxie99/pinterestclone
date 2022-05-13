@@ -18,8 +18,6 @@ const Pin = (props: { pin: { imageUrl: any; title: any } })=> {
     }, [imageUrl])
     return (
     <View style={styles.postpin}>
-      <Text style={styles.title}>{title}</Text>
-
       <View>
         <Image style={[styles.image, {aspectRatio: imageRatio}]} source={{uri: imageUrl}}/>
       <View style={styles.icons}>
@@ -28,8 +26,8 @@ const Pin = (props: { pin: { imageUrl: any; title: any } })=> {
           </Pressable>
          <Entypo style={styles.share} name="dots-three-horizontal" size={24} color="white" />
       </View>
-
       </View>
+      <Text style={styles.title} numberOfLines={2}>{title}</Text>
 
       </View>
     )
@@ -37,18 +35,19 @@ const Pin = (props: { pin: { imageUrl: any; title: any } })=> {
 
 const styles = StyleSheet.create({
   title: {
-    fontSize: 20,
+    fontSize: 14,
     fontWeight: 'bold',
     margin: 10 ,
     color: 'white',
   },
   image: {
     width: "100%",
-    borderRadius: 50,
+    borderRadius: 30,
     
   },
   postpin: {
     width: '100%',
+    padding: 10,
   },
   icons:{
      display: 'flex',
