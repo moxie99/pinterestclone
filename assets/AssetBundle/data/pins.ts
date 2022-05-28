@@ -1,22 +1,22 @@
-export default [
+ export default [
   {
     id: "0",
     imageUrl:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/0.jpeg",
-    title: "notJust Dev Hoodie",
+      "https://jessicaoparesaforo.com/wp-content/uploads/2022/03/MG_4299-scaled-e1648678659471.jpg",
+    title: "Marry Her",
   },
   {
     id: "1",
     imageUrl:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/1.jpeg",
-    title: "Programmer working on laptop computer in office studio",
+      "https://www.citimuzik.com/wp-content/uploads/2022/01/141209429_742175623370584_1744459786205597512_n-1.jpg",
+    title: "Take Her Out On A Bike",
   },
   {
     id: "2",
     imageUrl:
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/pinterest/2.jpeg",
+      "https://www.citimuzik.com/wp-content/uploads/2022/01/178230428_500293414491094_7632194506325836610_n-1.jpg",
     title:
-      "computer setup | computer setup idea | black wallpaper #computersetupideas",
+      "If she smiles on a bike, she is so married",
   },
   {
     id: "3",

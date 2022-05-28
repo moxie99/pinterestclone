@@ -7,7 +7,7 @@ import pins from "../assets/AssetBundle/data/pins"
 
 export default function HomeScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (
-    <ScrollView>
+    <ScrollView >
     <View style={styles.container}>
       {/* left column */}
       <View style={{flex: 1}}>
@@ -34,6 +34,6 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: 'center',
     alignItems: 'center',
-    padding: 10,
+    padding: 10, 
   }
 });

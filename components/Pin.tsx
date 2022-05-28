@@ -1,4 +1,4 @@
-import {Image, View, Text, StyleSheet, Pressable} from 'react-native';
+ import {Image, View, Text, StyleSheet, Pressable} from 'react-native';
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import {useState, useEffect} from 'react';
@@ -38,7 +38,9 @@ const styles = StyleSheet.create({
     fontSize: 14,
     fontWeight: 'bold',
     margin: 10 ,
-    color: 'white',
+    color: '#181818',
+    lineHeight: 22,
+    letterSpacing: 1,
   },
   image: {
     width: "100%",
@@ -63,7 +65,7 @@ likeBtn: {
       borderRadius: 50,
 },
 share:{
-  position: "absolute",
+position: "absolute",
 bottom: 10,
 right: 10,
 }
