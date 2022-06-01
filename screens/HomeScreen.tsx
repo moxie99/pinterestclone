@@ -3,7 +3,7 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 import Pin from '../components/Pin';
-import pins from "../assets/AssetBundle/data/pins"
+import pins from "../assets//data/pins"
 
 export default function HomeScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
   return (

@@ -2,13 +2,13 @@
 import { AntDesign } from '@expo/vector-icons';
 import { Entypo } from '@expo/vector-icons';
 import {useState, useEffect} from 'react';
-
-const Pin = (props: { pin: { imageUrl: any; title: any } })=> {
-    const {imageUrl, title} = props.pin;
+import {useNavigation} from "@react-navigation/native";
+const Pin = (props: { pin: { imageUrl: any; title: any; id: any; }; })=> {
+    const {imageUrl, title,  id} = props.pin;
     const onLike = ()=> {}
-    console.log(props)
+    
     const [imageRatio, setImageRatio] = useState(1);
-
+    const navigation = useNavigation();
     
 
     useEffect(() => {
@@ -16,7 +16,12 @@ const Pin = (props: { pin: { imageUrl: any; title: any } })=> {
         Image.getSize(imageUrl, (width, height) => setImageRatio(width/height))
       }
     }, [imageUrl])
+
+    const goToSinglePin =()=> {
+      navigation.navigate("SinglePin", {id});
+    }
     return (
+      <Pressable onPress={goToSinglePin}>
     <View style={styles.postpin}>
       <View>
         <Image style={[styles.image, {aspectRatio: imageRatio}]} source={{uri: imageUrl}}/>
@@ -30,6 +35,7 @@ const Pin = (props: { pin: { imageUrl: any; title: any } })=> {
       <Text style={styles.title} numberOfLines={2}>{title}</Text>
 
       </View>
+      </Pressable>
     )
 }
 
